@@ -1,0 +1,121 @@
+/* Reset default margins,padding */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+/* Designing the body */
+body{
+    background: url("https://img.freepik.com/free-photo/beautiful-mountains_181624-389.jpg?w=360&t=st=1704354268~exp=1704354868~hmac=27046781b6ff6b13ddde1b0a91d265e89e29af4995d8a136d6b0d8a053490fb2");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 100vh;
+}
+
+
+/* Designing the container containing the whole current weather data*/
+.container{
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    background: url("https://img.freepik.com/free-photo/beautiful-mountains_181624-389.jpg?w=360&t=st=1704354268~exp=1704354868~hmac=27046781b6ff6b13ddde1b0a91d265e89e29af4995d8a136d6b0d8a053490fb2");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 90vh;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+
+/* Designing the search bar */
+#search{
+    width: 180px;
+    height: 20px;
+    align-items: center;
+}
+
+
+/* Designing the search button */
+#btn{
+    border: 0;
+    outline: 0;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* Designig the weather icon */
+#icon{
+    height: 90px;
+    width: 100px;
+}
+
+
+/* Blocking the error message which is to be shown only when wrong city name is entered */
+#error-message {
+    display: none;
+}
+
+
+/* Designing the details section containing the details of pressure,humidity and wind speed */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:0 20px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/* Designing the humidity,pressure and wind speed data */
+#humidity_data, #wind_data, #pressure_data{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-top: -6px;
+} 
+
+
+/* Designing the humidity,pressure and wind speed logo */
+.details img{
+    width: 80px;
+    margin-right: 10px;
+}
+
+
+
+/* Designing the city shown */
+#city{
+    font-size: 50px;
+}
+
+/* Designing the temperature shown */
+#tempe{
+    font-size: 40px;
+}
+
+
+
+/* Designing the copyright section */
+.Copyright{
+    padding: 130px;
+    font-size: 25px;
+    align-items: right;
+}
+
+
+
+/* Designing the date and time */
+#date{
+    font-size: 30px;
+    font-weight: bold;
+}

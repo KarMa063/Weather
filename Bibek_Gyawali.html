@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <!-- Linking css stylesheet to the HTML file -->
+    <link rel="stylesheet" href="Bibek_Gyawali.css">
+</head>
+<body>
+    <!-- Main container where all current data is to be shown -->
+    <div class="container">
+        <!-- Search section -->
+        <input type="text" id="search" placeholder="Enter Your City Name">
+        <button id="btn">Search</button>
+        
+
+        <!-- In case of error city name -->
+        <div id="error-message">Invalid city name. Please try again.</div>
+        <div id="weather">
+            <!-- City,temperature,date and time (24-hour system) section -->
+            <div id="city_temp_date">
+                <h1 id = "city"></h1>
+                <div id="date">
+                    <span id="date"></span>
+                </div>
+                <h2 id = "tempe"></h2>
+            </div>
+            <!-- Icon showing current weather status to be fetched from API -->
+            <img  id="icon">
+            <!-- Humidity,Wind Speed and Pressure details -->
+                <div class="details">
+                    <!-- Humidity Section -->
+                    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/humidity-1686238-1430568.png?f=webp&w=256">
+                    <div>
+                        <p>Humidity</p>
+                        <p id="humidity_data"></p>
+                    </div>
+                    <!-- Wind Speed Section -->
+                    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/wind-speed-2295713-1939049.png?f=webp&w=256">
+                    <div>
+                        <p> Wind Speed </p>
+                        <p id="wind_data"></p>
+                    </div>
+                    <!-- Pressure Section -->
+                    <img src="https://cdn4.iconfinder.com/data/icons/weather-287/32/92-_pressure-_air-_wind-_weather-512.png">
+                    <div>
+                        <p>Pressure</p>
+                        <p id="pressure_data"></p>
+                    </div>
+                </div>
+    </div>
+    <!-- Linking the JavaScript File -->
+    <script src="Bibek_Gyawali.js"></script>
+</body>
+</html>
